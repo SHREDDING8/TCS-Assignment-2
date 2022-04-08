@@ -22,6 +22,18 @@ def split(line, number):
             err.write("E0: Input file is malformed")
             raise SystemExit(0)
 
+def E0(data):
+    res = []
+    for i in data:
+        for j in i:
+            res.append(j)
+
+    if len(res) == 0:
+        with open("output.txt", "w") as err:
+            err.write("Error:\n")
+            err.write("E0: Input file is malformed")
+            raise SystemExit(0)
+
 
 def E1(data):
     # check all states. They should be in array of states
@@ -89,13 +101,30 @@ def E3(data):
                     raise SystemExit(0)
 
 
-def E4(init_st):
+def E4(data):
     # check existing initial state
-    if not init_st:
+    if not data[2]:
         with open("output.txt", "w") as err:
             err.write("Error:\n")
             err.write("E4: Initial state is not defined")
             raise SystemExit(0)
+
+
+def E5(data):
+    check_trans = {}
+    for i in data[0]:
+        check_trans[i] = []
+    trans = []
+    for i in data[-1]:
+        trans.append(i.split(">"))
+    for i in trans:
+        if i[1] not in check_trans[i[0]]:
+            check_trans[i[0]].append(i[1])
+        else:
+            with open("output.txt", "w") as err:
+                err.write("Error:\n")
+                err.write("E5: FSA is nondeterministic")
+                raise SystemExit(0)
 
 
 
@@ -108,3 +137,9 @@ with open("input.txt") as fsa_file:  # open file
     for i in fsa_file.readlines():  # correct file or not
         data.append(split(i, j))
         j += 1
+    E0(data)
+    E1(data)
+    E2(data)
+    E3(data)
+    E4(data)
+    E5(data)
