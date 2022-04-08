@@ -22,6 +22,7 @@ def split(line, number):
             err.write("E0: Input file is malformed")
             raise SystemExit(0)
 
+
 def E0(data):
     res = []
     for i in data:
@@ -88,7 +89,6 @@ def E2(data):
                     raise SystemExit(0)
 
 
-
 def E3(data):
     # check transitions. They should be in array of trans
     for i in data[-1]:
@@ -127,6 +127,30 @@ def E5(data):
                 raise SystemExit(0)
 
 
+def minus_one_step(i, j):
+    if i == j:
+        TF = False
+        c = []
+        for el in trans:
+            if el[0] == el[-1] and el[0] == states[i]:
+                TF = True
+                c.append(el[1])
+        if len(c) >= 1:
+            wr = "("
+            for l in c:
+                wr += l + "|"
+            wr += "eps)"
+            resmas[k][i][j] = wr
+        if not TF:
+            resmas[k][i][j] = "(eps)"
+    else:
+        TF = False
+        for el in trans:
+            if el[0] == states[i] and el[-1] == states[j]:
+                TF = True
+                resmas[k][i][j] = "(%s)" % el[1]
+        if not TF:
+            resmas[k][i][j] = "({})"
 
 
 with open("input.txt") as fsa_file:  # open file
@@ -143,3 +167,57 @@ with open("input.txt") as fsa_file:  # open file
     E3(data)
     E4(data)
     E5(data)
+
+    states = data[0]
+    if len(data[3]) == 0:
+        with open("output.txt", "w") as err:
+            err.write("{}")
+            raise SystemExit(0)
+
+    trans = []
+    for i in data[-1]:
+        trans.append(i.split(">"))
+    res = ""
+    resmas = []
+
+    for k in range(len(states) + 1):
+        mas_k = []
+        for i in range(len(states) + 1):
+            mas_i = []
+            for j in range(len(states) + 1):
+                mas_i.append("")
+            mas_k.append(mas_i)
+        resmas.append(mas_k)
+
+    for k in range(-1, len(states)):
+        for i in range(len(states)):
+            for j in range(len(states)):
+                if i == j:
+                    if k == -1:
+                        minus_one_step(i, j)
+                    else:
+                        wr = "(" + resmas[k - 1][i][k] + resmas[k - 1][k][k] + "*" + resmas[k - 1][k][
+                            j] + "|" + \
+                             resmas[k - 1][i][j] + ")"
+                        resmas[k][i][j] = wr
+                else:
+                    if k == -1:
+                        minus_one_step(i, j)
+                    else:
+                        wr = "(" + resmas[k - 1][i][k] + resmas[k - 1][k][k] + "*" + resmas[k - 1][k][
+                            j] + "|" + \
+                             resmas[k - 1][i][j] + ")"
+                        resmas[k][i][j] = wr
+
+    res = ""
+
+    for i in range(len(states)):
+        for j in range(len(states)):
+            if states[i] == data[2][0] and states[j] in data[3]:
+                if res:
+                    res += "|" + resmas[len(states) - 1][i][j][1:-1:]
+                else:
+                    res = resmas[len(states) - 1][i][j][1:-1:]
+with open("output.txt", "w") as err:
+    err.write(res)
+    raise SystemExit(0)
