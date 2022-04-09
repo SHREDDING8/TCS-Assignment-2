@@ -1,0 +1,162 @@
+[
+	{
+		"code": "OK",
+		"reason": "Error:\nE2: Some states are disjoint",
+		"id": 0,
+		"_lang": "python3",
+		"_start": 1649441655201,
+		"_end": 1649441655316
+	},
+	{
+		"code": "OK",
+		"reason": "((a|eps)(a|eps)*(b)|(b))(({})(a|eps)*(b)|(a|b|eps))*(({})(a|eps)*(b)|(a|b|eps))|((a|eps)(a|eps)*(b)|(b))",
+		"id": 1,
+		"_lang": "python3",
+		"_start": 1649441655337,
+		"_end": 1649441655456
+	},
+	{
+		"code": "OK",
+		"reason": "{}",
+		"id": 2,
+		"_lang": "python3",
+		"_start": 1649441655478,
+		"_end": 1649441655596
+	},
+	{
+		"code": "OK",
+		"reason": "Error:\nE5: FSA is nondeterministic",
+		"id": 3,
+		"_lang": "python3",
+		"_start": 1649441655621,
+		"_end": 1649441655740
+	},
+	{
+		"code": "OK",
+		"reason": "(a|eps)(a|eps)*(a|eps)|(a|eps)",
+		"id": 4,
+		"_lang": "python3",
+		"_start": 1649441655761,
+		"_end": 1649441655880
+	},
+	{
+		"code": "OK",
+		"reason": "(((b|eps)(b|eps)*(a)|(a))((b)(b|eps)*(a)|(eps))*((b)(b|eps)*({})|(a))|((b|eps)(b|eps)*({})|({})))(((b)(b|eps)*(a)|({}))((b)(b|eps)*(a)|(eps))*((b)(b|eps)*({})|(a))|((b)(b|eps)*({})|(a|eps)))*(((b)(b|eps)*(a)|({}))((b)(b|eps)*(a)|(eps))*((b)(b|eps)*({})|(a))|((b)(b|eps)*({})|(a|eps)))|(((b|eps)(b|eps)*(a)|(a))((b)(b|eps)*(a)|(eps))*((b)(b|eps)*({})|(a))|((b|eps)(b|eps)*({})|({})))",
+		"id": 5,
+		"_lang": "python3",
+		"_start": 1649441655902,
+		"_end": 1649441656020
+	},
+	{
+		"code": "OK",
+		"reason": "(((b|eps)(b|eps)*(a)|(a))((b)(b|eps)*(a)|(eps))*((b)(b|eps)*({})|(a))|((b|eps)(b|eps)*({})|({})))(((b)(b|eps)*(a)|({}))((b)(b|eps)*(a)|(eps))*((b)(b|eps)*({})|(a))|((b)(b|eps)*({})|(a|eps)))*(((b)(b|eps)*(a)|({}))((b)(b|eps)*(a)|(eps))*((b)(b|eps)*(b|eps)|(b))|((b)(b|eps)*(b|eps)|(b)))|(((b|eps)(b|eps)*(a)|(a))((b)(b|eps)*(a)|(eps))*((b)(b|eps)*(b|eps)|(b))|((b|eps)(b|eps)*(b|eps)|(b|eps)))|(((b|eps)(b|eps)*(a)|(a))((b)(b|eps)*(a)|(eps))*((b)(b|eps)*({})|(a))|((b|eps)(b|eps)*({})|({})))(((b)(b|eps)*(a)|({}))((b)(b|eps)*(a)|(eps))*((b)(b|eps)*({})|(a))|((b)(b|eps)*({})|(a|eps)))*(((b)(b|eps)*(a)|({}))((b)(b|eps)*(a)|(eps))*((b)(b|eps)*({})|(a))|((b)(b|eps)*({})|(a|eps)))|(((b|eps)(b|eps)*(a)|(a))((b)(b|eps)*(a)|(eps))*((b)(b|eps)*({})|(a))|((b|eps)(b|eps)*({})|({})))",
+		"id": 6,
+		"_lang": "python3",
+		"_start": 1649441656042,
+		"_end": 1649441656161
+	},
+	{
+		"code": "OK",
+		"reason": "(((eps)(eps)*(1)|(1))(({})(eps)*(1)|(0|1|eps))*(({})(eps)*(0)|({}))|((eps)(eps)*(0)|(0)))((({})(eps)*(1)|({}))(({})(eps)*(1)|(0|1|eps))*(({})(eps)*(0)|({}))|(({})(eps)*(0)|(0|1|eps)))*((({})(eps)*(1)|({}))(({})(eps)*(1)|(0|1|eps))*(({})(eps)*(1)|(0|1|eps))|(({})(eps)*(1)|({})))|(((eps)(eps)*(1)|(1))(({})(eps)*(1)|(0|1|eps))*(({})(eps)*(1)|(0|1|eps))|((eps)(eps)*(1)|(1)))",
+		"id": 7,
+		"_lang": "python3",
+		"_start": 1649441656182,
+		"_end": 1649441656301
+	},
+	{
+		"code": "OK",
+		"reason": "(((1|eps)(1|eps)*(0)|(0))((1)(1|eps)*(0)|(eps))*((1)(1|eps)*({})|(0))|((1|eps)(1|eps)*({})|({})))((({})(1|eps)*(0)|({}))((1)(1|eps)*(0)|(eps))*((1)(1|eps)*({})|(0))|(({})(1|eps)*({})|(0|1|eps)))*((({})(1|eps)*(0)|({}))((1)(1|eps)*(0)|(eps))*((1)(1|eps)*(1|eps)|(1))|(({})(1|eps)*(1|eps)|({})))|(((1|eps)(1|eps)*(0)|(0))((1)(1|eps)*(0)|(eps))*((1)(1|eps)*(1|eps)|(1))|((1|eps)(1|eps)*(1|eps)|(1|eps)))",
+		"id": 8,
+		"_lang": "python3",
+		"_start": 1649441656322,
+		"_end": 1649441656433
+	},
+	{
+		"code": "OK",
+		"reason": "((((eps)(eps)*(a)|(a))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((eps)(eps)*(b)|(b)))(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((b)(eps)*(b)|(eps)))*(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*({})|(b))|((b)(eps)*({})|(a)))|(((eps)(eps)*(a)|(a))((a)(eps)*(a)|(eps))*((a)(eps)*({})|(b))|((eps)(eps)*({})|({}))))(((({})(eps)*(a)|(b))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|(({})(eps)*(b)|(a)))(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((b)(eps)*(b)|(eps)))*(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*({})|(b))|((b)(eps)*({})|(a)))|((({})(eps)*(a)|(b))((a)(eps)*(a)|(eps))*((a)(eps)*({})|(b))|(({})(eps)*({})|(eps))))*(((({})(eps)*(a)|(b))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|(({})(eps)*(b)|(a)))(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((b)(eps)*(b)|(eps)))*(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*(eps)|(a))|((b)(eps)*(eps)|(b)))|((({})(eps)*(a)|(b))((a)(eps)*(a)|(eps))*((a)(eps)*(eps)|(a))|(({})(eps)*(eps)|({}))))|((((eps)(eps)*(a)|(a))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((eps)(eps)*(b)|(b)))(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((b)(eps)*(b)|(eps)))*(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*(eps)|(a))|((b)(eps)*(eps)|(b)))|(((eps)(eps)*(a)|(a))((a)(eps)*(a)|(eps))*((a)(eps)*(eps)|(a))|((eps)(eps)*(eps)|(eps))))|((((eps)(eps)*(a)|(a))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((eps)(eps)*(b)|(b)))(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((b)(eps)*(b)|(eps)))*(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*({})|(b))|((b)(eps)*({})|(a)))|(((eps)(eps)*(a)|(a))((a)(eps)*(a)|(eps))*((a)(eps)*({})|(b))|((eps)(eps)*({})|({}))))(((({})(eps)*(a)|(b))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|(({})(eps)*(b)|(a)))(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((b)(eps)*(b)|(eps)))*(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*({})|(b))|((b)(eps)*({})|(a)))|((({})(eps)*(a)|(b))((a)(eps)*(a)|(eps))*((a)(eps)*({})|(b))|(({})(eps)*({})|(eps))))*(((({})(eps)*(a)|(b))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|(({})(eps)*(b)|(a)))(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((b)(eps)*(b)|(eps)))*(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*({})|(b))|((b)(eps)*({})|(a)))|((({})(eps)*(a)|(b))((a)(eps)*(a)|(eps))*((a)(eps)*({})|(b))|(({})(eps)*({})|(eps))))|((((eps)(eps)*(a)|(a))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((eps)(eps)*(b)|(b)))(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((b)(eps)*(b)|(eps)))*(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*({})|(b))|((b)(eps)*({})|(a)))|(((eps)(eps)*(a)|(a))((a)(eps)*(a)|(eps))*((a)(eps)*({})|(b))|((eps)(eps)*({})|({}))))",
+		"id": 9,
+		"_lang": "python3",
+		"_start": 1649441656454,
+		"_end": 1649441656573
+	},
+	{
+		"code": "OK",
+		"reason": "((((eps)(eps)*(a)|(a))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((eps)(eps)*(b)|(b)))(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((b)(eps)*(b)|(eps)))*(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*({})|(b))|((b)(eps)*({})|(a)))|(((eps)(eps)*(a)|(a))((a)(eps)*(a)|(eps))*((a)(eps)*({})|(b))|((eps)(eps)*({})|({}))))(((({})(eps)*(a)|(b))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|(({})(eps)*(b)|(a)))(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((b)(eps)*(b)|(eps)))*(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*({})|(b))|((b)(eps)*({})|(a)))|((({})(eps)*(a)|(b))((a)(eps)*(a)|(eps))*((a)(eps)*({})|(b))|(({})(eps)*({})|(eps))))*(((({})(eps)*(a)|(b))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|(({})(eps)*(b)|(a)))(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((b)(eps)*(b)|(eps)))*(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*({})|(b))|((b)(eps)*({})|(a)))|((({})(eps)*(a)|(b))((a)(eps)*(a)|(eps))*((a)(eps)*({})|(b))|(({})(eps)*({})|(eps))))|((((eps)(eps)*(a)|(a))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((eps)(eps)*(b)|(b)))(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((b)(eps)*(b)|(eps)))*(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*({})|(b))|((b)(eps)*({})|(a)))|(((eps)(eps)*(a)|(a))((a)(eps)*(a)|(eps))*((a)(eps)*({})|(b))|((eps)(eps)*({})|({}))))",
+		"id": 10,
+		"_lang": "python3",
+		"_start": 1649441656594,
+		"_end": 1649441656713
+	},
+	{
+		"code": "OK",
+		"reason": "(((b|eps)(b|eps)*(a)|(a))((b)(b|eps)*(a)|(eps))*((b)(b|eps)*({})|(a))|((b|eps)(b|eps)*({})|({})))(((b)(b|eps)*(a)|({}))((b)(b|eps)*(a)|(eps))*((b)(b|eps)*({})|(a))|((b)(b|eps)*({})|(a|eps)))*(((b)(b|eps)*(a)|({}))((b)(b|eps)*(a)|(eps))*((b)(b|eps)*(b|eps)|(b))|((b)(b|eps)*(b|eps)|(b)))|(((b|eps)(b|eps)*(a)|(a))((b)(b|eps)*(a)|(eps))*((b)(b|eps)*(b|eps)|(b))|((b|eps)(b|eps)*(b|eps)|(b|eps)))",
+		"id": 11,
+		"_lang": "python3",
+		"_start": 1649441656733,
+		"_end": 1649441656853
+	},
+	{
+		"code": "OK",
+		"reason": "(a_a|eps)(a_a|eps)*(a_a|eps)|(a_a|eps)",
+		"id": 12,
+		"_lang": "python3",
+		"_start": 1649441656874,
+		"_end": 1649441656993
+	},
+	{
+		"code": "OK",
+		"reason": "((((eps)(eps)*(a)|(a))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((eps)(eps)*(b)|(b)))(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((b)(eps)*(b)|(eps)))*(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*({})|(b))|((b)(eps)*({})|(a)))|(((eps)(eps)*(a)|(a))((a)(eps)*(a)|(eps))*((a)(eps)*({})|(b))|((eps)(eps)*({})|({}))))(((({})(eps)*(a)|(b))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|(({})(eps)*(b)|(a)))(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((b)(eps)*(b)|(eps)))*(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*({})|(b))|((b)(eps)*({})|(a)))|((({})(eps)*(a)|(b))((a)(eps)*(a)|(eps))*((a)(eps)*({})|(b))|(({})(eps)*({})|(eps))))*(((({})(eps)*(a)|(b))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|(({})(eps)*(b)|(a)))(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((b)(eps)*(b)|(eps)))*(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((b)(eps)*(b)|(eps)))|((({})(eps)*(a)|(b))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|(({})(eps)*(b)|(a))))|((((eps)(eps)*(a)|(a))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((eps)(eps)*(b)|(b)))(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((b)(eps)*(b)|(eps)))*(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((b)(eps)*(b)|(eps)))|(((eps)(eps)*(a)|(a))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((eps)(eps)*(b)|(b))))",
+		"id": 13,
+		"_lang": "python3",
+		"_start": 1649441657014,
+		"_end": 1649441657133
+	},
+	{
+		"code": "OK",
+		"reason": "((((eps)(eps)*(a)|(a))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((eps)(eps)*(b)|(b)))(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((b)(eps)*(b)|(eps)))*(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*({})|(b))|((b)(eps)*({})|(a)))|(((eps)(eps)*(a)|(a))((a)(eps)*(a)|(eps))*((a)(eps)*({})|(b))|((eps)(eps)*({})|({}))))(((({})(eps)*(a)|(b))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|(({})(eps)*(b)|(a)))(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((b)(eps)*(b)|(eps)))*(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*({})|(b))|((b)(eps)*({})|(a)))|((({})(eps)*(a)|(b))((a)(eps)*(a)|(eps))*((a)(eps)*({})|(b))|(({})(eps)*({})|(eps))))*(((({})(eps)*(a)|(b))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|(({})(eps)*(b)|(a)))(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((b)(eps)*(b)|(eps)))*(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*(a)|(eps))|((b)(eps)*(a)|({})))|((({})(eps)*(a)|(b))((a)(eps)*(a)|(eps))*((a)(eps)*(a)|(eps))|(({})(eps)*(a)|(b))))|((((eps)(eps)*(a)|(a))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((eps)(eps)*(b)|(b)))(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*(b)|({}))|((b)(eps)*(b)|(eps)))*(((b)(eps)*(a)|({}))((a)(eps)*(a)|(eps))*((a)(eps)*(a)|(eps))|((b)(eps)*(a)|({})))|(((eps)(eps)*(a)|(a))((a)(eps)*(a)|(eps))*((a)(eps)*(a)|(eps))|((eps)(eps)*(a)|(a))))",
+		"id": 14,
+		"_lang": "python3",
+		"_start": 1649441657154,
+		"_end": 1649441657273
+	},
+	{
+		"code": "OK",
+		"reason": "Error:\nE3: A transition '1' is not represented in the alphabet",
+		"id": 15,
+		"_lang": "python3",
+		"_start": 1649441657293,
+		"_end": 1649441657404
+	},
+	{
+		"code": "OK",
+		"reason": "Error:\nE0: Input file is malformed",
+		"id": 16,
+		"_lang": "python3",
+		"_start": 1649441657428,
+		"_end": 1649441657544
+	},
+	{
+		"code": "OK",
+		"reason": "Error:\nE4: Initial state is not defined",
+		"id": 17,
+		"_lang": "python3",
+		"_start": 1649441657565,
+		"_end": 1649441657684
+	},
+	{
+		"code": "OK",
+		"reason": "Error:\nE0: Input file is malformed",
+		"id": 18,
+		"_lang": "python3",
+		"_start": 1649441657705,
+		"_end": 1649441657824
+	},
+	{
+		"code": "OK",
+		"reason": "Error:\nE1: A state 'idle' is not in the set of states",
+		"id": 19,
+		"_lang": "python3",
+		"_start": 1649441657845,
+		"_end": 1649441657965
+	}
+]
